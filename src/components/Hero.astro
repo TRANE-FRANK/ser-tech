@@ -1,0 +1,84 @@
+---
+import { Image } from "astro:assets";
+import heroImg from "../assets/images/hero.avif";
+---
+
+<section class="bg-bg-main relative overflow-hidden">
+  <!-- glow sutil -->
+  <div class="absolute inset-0 bg-linear-to-r from-primary/10 to-secondary/10">
+  </div>
+
+  <div
+    class="relative max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center reveal reveal-scale"
+  >
+    <!-- 🧠 TEXTO -->
+    <div class="space-y-6">
+      <!-- confianza rápida -->
+      <p class="text-sm text-primary font-semibold">
+        Seguridad • Redes • Soporte técnico
+      </p>
+
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+        Tecnología confiable para que tu negocio <span class="text-primary"
+          >no se detenga</span
+        >
+      </h1>
+
+      <p class="text-text-secondary text-lg">
+        Implementamos sistemas de seguridad, redes e infraestructura para
+        empresas que necesitan operar sin interrupciones ni riesgos.
+      </p>
+
+      <!-- micro confianza -->
+      <div class="flex gap-6 text-sm text-text-secondary">
+        <span>✔ Instalación profesional</span>
+        <span>✔ Soluciones a medida</span>
+      </div>
+
+      <!-- CTAs -->
+      <div class="flex gap-4 flex-col sm:flex-row pt-2">
+        <a href="#contacto" class="btn-primary"> Solicitar diagnóstico </a>
+
+        <a href="#servicios" class="btn-outline"> Ver soluciones </a>
+      </div>
+    </div>
+
+    <!-- 🖼️ IMAGEN -->
+    <div class="relative">
+      <!-- blur background -->
+      <div class="absolute -inset-4 bg-primary/20 blur-2xl opacity-30"></div>
+
+      <Image
+        src={heroImg}
+        alt="Instalación de sistemas de seguridad"
+        class="relative rounded-xl shadow-2xl object-cover"
+        widths={[400, 800, 1200]}
+        sizes="(max-width: 768px) 100vw, 50vw"
+        format="webp"
+        quality={80}
+        loading="eager"
+      />
+
+      <!-- badge flotante -->
+      <div
+        class="absolute bottom-4 left-4 bg-black/70 backdrop-blur px-4 py-2 rounded-lg text-sm"
+      >
+        + Soluciones para empresas
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, {
+    threshold: 0.15
+  });
+
+  document.querySelectorAll('.reveal')
+    .forEach(el => observer.observe(el));
+</script>

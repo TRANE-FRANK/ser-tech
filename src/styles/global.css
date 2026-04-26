@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  /* 🎯 Brand */
+  --color-primary: #7c3aed;
+  --color-secondary: #ec4899;
+
+  /* 🌑 Fondos */
+  --color-bg-main: #0f172a;
+  --color-bg-secondary: #1e293b;
+  --color-bg-card: #111827;
+
+  /* ⚪ Texto */
+  --color-text-main: #f8fafc;
+  --color-text-secondary: #94a3b8;
+
+  /* ✨ Acentos */
+  --color-accent-purple: #a78bfa;
+  --color-accent-pink: #f472b6;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-secondary hover:opacity-90 text-white px-6 py-3 rounded-xl font-semibold transition;
+  }
+
+  .btn-outline {
+    @apply border border-slate-600 hover:border-white px-6 py-3 rounded-xl transition;
+  }
+
+  .card {
+    @apply bg-bg-card p-6 rounded-xl border border-slate-800 hover:border-accent-purple transition;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-center;
+  }
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-scale {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.6s ease;
+}
+
+.fade-scale.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* base */
+.reveal {
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+/* variantes */
+.reveal-up {
+  transform: translateY(30px);
+}
+
+.reveal-left {
+  transform: translateX(-30px);
+}
+
+.reveal-right {
+  transform: translateX(30px);
+}
+
+.reveal-scale {
+  transform: scale(0.95);
+}
+
+/* visible */
+.reveal.show {
+  opacity: 1;
+  transform: translate(0,0) scale(1);
+}
+
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+.delay-300 { transition-delay: 0.3s; }
+.delay-400 { transition-delay: 0.4s; }

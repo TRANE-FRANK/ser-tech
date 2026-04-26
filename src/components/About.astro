@@ -1,0 +1,73 @@
+---
+import { Image } from "astro:assets";
+import about1 from "../assets/images/about.avif";
+import about2 from "../assets/images/about2.avif";
+---
+
+<section class="bg-bg-secondary py-20">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+    <!-- 🧠 Texto -->
+    <div class="space-y-6">
+
+      <span class="text-primary font-semibold">
+        Empresa 100% mexicana
+      </span>
+
+      <h2 class="text-3xl md:text-4xl font-bold">
+        Soluciones tecnológicas con enfoque real en tu negocio
+      </h2>
+
+      <p class="text-text-secondary text-lg">
+        Ayudamos a empresas a mejorar su seguridad, conectividad y operación mediante soluciones tecnológicas confiables y adaptadas a cada necesidad.
+      </p>
+
+      <p class="text-text-secondary">
+        Nos especializamos en videovigilancia, redes e infraestructura, ofreciendo implementaciones eficientes, seguras y listas para crecer contigo.
+      </p>
+
+      <!-- 🔥 Valores en vez de misión/visión -->
+      <div class="grid grid-cols-2 gap-4 mt-6 text-sm">
+
+        <div class="bg-bg-card p-4 rounded-xl border border-slate-800">
+          <h4 class="text-primary font-semibold">Enfoque práctico</h4>
+          <p class="text-text-secondary">Soluciones reales, sin complicaciones.</p>
+        </div>
+
+        <div class="bg-bg-card p-4 rounded-xl border border-slate-800">
+          <h4 class="text-primary font-semibold">Calidad y seguridad</h4>
+          <p class="text-text-secondary">Implementaciones confiables.</p>
+        </div>
+
+        <div class="bg-bg-card p-4 rounded-xl border border-slate-800">
+          <h4 class="text-primary font-semibold">Escalabilidad</h4>
+          <p class="text-text-secondary">Pensado para crecer contigo.</p>
+        </div>
+
+        <div class="bg-bg-card p-4 rounded-xl border border-slate-800">
+          <h4 class="text-primary font-semibold">Soporte continuo</h4>
+          <p class="text-text-secondary">Acompañamiento constante.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="grid grid-cols-2 gap-4">
+
+      <Image
+        src={about1}
+        alt="Instalación de cámaras"
+        class="rounded-xl shadow-lg object-cover h-full hover:scale-105 transition"
+      />
+
+      <Image
+        src={about2}
+        alt="Equipo técnico trabajando"
+        class="rounded-xl shadow-lg object-cover h-full hover:scale-105 transition"
+      />
+
+    </div>
+
+  </div>
+</section>

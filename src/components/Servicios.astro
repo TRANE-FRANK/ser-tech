@@ -1,0 +1,240 @@
+---
+import { Image } from "astro:assets";
+
+import videovigilanciaimg from "../assets/images/videovigilancia.avif";
+import controldeacceso from "../assets/images/control-acceso.avif";
+import alarma from "../assets/images/alarma.avif";
+
+import inalambrica from "../assets/images/inalambrica.avif";
+import cableadoestructurado from "../assets/images/cableado.avif";
+import optimizaciondered from "../assets/images/optimizacion.avif";
+
+//import equipos from "../assets/images/equipos.avif";
+//import mantenimiento from "../assets/images/mantenimiento.avif";
+//import instalacion from "../assets/images/instalacion.avif";
+---
+
+<section id="servicios" class="py-20 bg-bg-main">
+  <div class="max-w-7xl mx-auto px-6 space-y-20">
+    <!-- Header -->
+    <div class="text-center max-w-2xl mx-auto space-y-4">
+      <h2 class="text-3xl md:text-4xl font-bold">
+        Soluciones tecnológicas para tu negocio
+      </h2>
+      <p class="text-text-secondary">
+        Integramos seguridad, conectividad y soporte tecnológico para que tu
+        empresa opere sin interrupciones.
+      </p>
+    </div>
+
+    <!-- 🔐 Seguridad -->
+    <div>
+      <h3 class="text-xl font-semibold text-primary mb-6">Seguridad</h3>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card -->
+        <div
+          class="card p-0 overflow-hidden group hover:border-primary reveal reveal-up hover:scale-105 transition"
+        >
+          <Image
+            src={videovigilanciaimg}
+            alt="Videovigilancia"
+            class="w-full h-44 object-cover group-hover:scale-110 transition duration-500"
+            widths={[400, 800]}
+            sizes="(max-width: 768px) 100vw, 33vw"
+            loading="lazy"
+          />
+          <div class="p-5 reveal reveal-left delay-100">
+            <h4 class="text-primary font-semibold mb-2">Videovigilancia</h4>
+            <p class="text-text-secondary text-sm">
+              Supervisa tu negocio en tiempo real desde cualquier lugar y reduce
+              riesgos.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card p-0 overflow-hidden group hover:border-primary reveal reveal-up hover:scale-105 transition"
+        >
+          <Image
+            src={controldeacceso}
+            alt="Control de acceso"
+            class="w-full h-44 object-cover group-hover:scale-110 transition duration-500"
+            widths={[400, 800]}
+            sizes="(max-width: 768px) 100vw, 33vw"
+            loading="lazy"
+          />
+          <div class="p-5 reveal reveal-left delay-200">
+            <h4 class="text-primary font-semibold mb-2">Control de acceso</h4>
+            <p class="text-text-secondary text-sm">
+              Gestiona entradas y salidas con precisión y protege áreas
+              sensibles.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card p-0 overflow-hidden group hover:border-primary reveal reveal-up hover:scale-105 transition"
+        >
+          <Image
+            src={alarma}
+            alt="Sistemas de alarma"
+            class="w-full h-44 object-cover group-hover:scale-110 transition duration-500"
+            widths={[400, 800]}
+            sizes="(max-width: 768px) 100vw, 33vw"
+            loading="lazy"
+          />
+          <div class="p-5 reveal reveal-left delay-300">
+            <h4 class="text-primary font-semibold mb-2">Sistemas de alarma</h4>
+            <p class="text-text-secondary text-sm">
+              Respuesta inmediata ante intrusiones o incidentes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🌐 Redes -->
+    <div>
+      <h3 class="text-xl font-semibold text-primary mb-6">
+        Redes e Infraestructura
+      </h3>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div
+          class="card p-0 overflow-hidden group hover:border-primary reveal reveal-up hover:scale-105 transition"
+        >
+          <Image
+            src={inalambrica}
+            alt="Redes inalámbricas"
+            class="w-full h-44 object-cover group-hover:scale-110 transition duration-500"
+            widths={[400, 800]}
+            sizes="(max-width: 768px) 100vw, 33vw"
+            loading="lazy"
+          />
+          <div class="p-5 reveal reveal-right delay-100">
+            <h4 class="text-primary font-semibold mb-2">Redes inalámbricas</h4>
+            <p class="text-text-secondary text-sm">
+              Conectividad rápida, estable y sin cables para tu operación
+              diaria.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card p-0 overflow-hidden group hover:border-primary reveal reveal-up hover:scale-105 transition"
+        >
+          <Image
+            src={cableadoestructurado}
+            alt="Cableado estructurado"
+            class="w-full h-44 object-cover group-hover:scale-110 transition duration-500"
+            widths={[400, 800]}
+            sizes="(max-width: 768px) 100vw, 33vw"
+            loading="lazy"
+          />
+          <div class="p-5 reveal reveal-right delay-200">
+            <h4 class="text-primary font-semibold mb-2">
+              Cableado estructurado
+            </h4>
+            <p class="text-text-secondary text-sm">
+              Infraestructura ordenada, segura y preparada para crecer.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card p-0 overflow-hidden group hover:border-primary reveal reveal-up hover:scale-105 transition"
+        >
+          <Image
+            src={optimizaciondered}
+            alt="Optimización de red"
+            class="w-full h-44 object-cover group-hover:scale-110 transition duration-500"
+            widths={[400, 800]}
+            sizes="(max-width: 768px) 100vw, 33vw"
+            loading="lazy"
+          />
+          <div class="p-5 reveal reveal-right delay-300">
+            <h4 class="text-primary font-semibold mb-2">Optimización de red</h4>
+            <p class="text-text-secondary text-sm">
+              Mejora velocidad, estabilidad y rendimiento de tus sistemas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 💻 Equipos -->
+    <div>
+      <h3 class="text-xl font-semibold text-primary mb-6">Equipos y soporte</h3>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div
+          class="card p-0 overflow-hidden group hover:border-primary reveal reveal-up hover:scale-105 transition"
+        >
+          <Image
+            src={controldeacceso}
+            alt="Venta de equipo de cómputo"
+            class="w-full h-44 object-cover group-hover:scale-110 transition duration-500"
+            widths={[400, 800]}
+            sizes="(max-width: 768px) 100vw, 33vw"
+            loading="lazy"
+          />
+          <div class="p-5 reveal reveal-left delay-100">
+            <h4 class="text-primary font-semibold mb-2">
+              Venta de equipo de cómputo
+            </h4>
+            <p class="text-text-secondary text-sm">
+              Equipos y periféricos de alto rendimiento para tu empresa.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card p-0 overflow-hidden group hover:border-primary reveal reveal-up hover:scale-105 transition"
+        >
+          <Image
+            src={controldeacceso}
+            alt="Mantenimiento"
+            class="w-full h-44 object-cover group-hover:scale-110 transition duration-500"
+            widths={[400, 800]}
+            sizes="(max-width: 768px) 100vw, 33vw"
+            loading="lazy"
+          />
+          <div class="p-5 reveal reveal-left delay-200">
+            <h4 class="text-primary font-semibold mb-2">Mantenimiento</h4>
+            <p class="text-text-secondary text-sm">
+              Prevención y solución de fallas para evitar interrupciones.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card p-0 overflow-hidden group hover:border-primary reveal reveal-up hover:scale-105 transition"
+        >
+          <Image
+            src={controldeacceso}
+            alt="Instalación y configuración"
+            class="w-full h-44 object-cover group-hover:scale-110 transition duration-500"
+            widths={[400, 800]}
+            sizes="(max-width: 768px) 100vw, 33vw"
+            loading="lazy"
+          />
+          <div class="p-5 reveal reveal-left delay-300">
+            <h4 class="text-primary font-semibold mb-2">
+              Instalación y configuración
+            </h4>
+            <p class="text-text-secondary text-sm">
+              Implementación profesional lista para operar desde el primer día.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 👇 cierre sutil -->
+    <p class="text-center text-text-secondary max-w-xl mx-auto reveal reveal-scale delay-400">
+      ¿No sabes qué solución necesitas? Te ayudamos a encontrar la mejor opción
+      para tu negocio.
+    </p>
+  </div>
+</section>
